@@ -1,0 +1,10 @@
+.wrapper {
+    background: url(./bird.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* phone layout  */
+.phone {
+    background: url(./bird.jpg) no-repeat center;
+    background-size: cover;
+}
