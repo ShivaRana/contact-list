@@ -1,5 +1,5 @@
 .wrapper {
-    background: url(./bird.jpg) no-repeat center;
+    background: url(./water-bubbles.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -7,4 +7,49 @@
 .phone {
     background: url(./bird.jpg) no-repeat center;
     background-size: cover;
+}
+
+/* Home screen  */
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background: radial-gradient(rgb(134, 23, 134), rgb(104, 14, 14));
+}
+
+#label {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    animation: slideAnimation 3s ease-in-out infinite;
+}
+
+@keyframes slideAnimation {
+    0%, 100% {
+        color: black;
+        filter: drop-shadow((0 0 10px purple));
+    }
+    50% {
+        color: purple;
+        filter: drop-shadow((0 0 10px purple));
+    }
 }
