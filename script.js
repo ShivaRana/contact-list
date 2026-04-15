@@ -19,4 +19,3 @@ const displayAppScreen = () => {
     // show app screen
     document.querySelector(".appScreen").style.display = "block";
 }
-
